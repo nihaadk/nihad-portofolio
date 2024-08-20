@@ -22,6 +22,10 @@ const links: NavItem[] = [
     path: "/resume",
   },
   {
+    name: "work",
+    path: "/work",
+  },
+  {
     name: "contact",
     path: "/contact",
   },
