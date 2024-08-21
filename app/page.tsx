@@ -1,5 +1,6 @@
 import Photo from "@/components/Photo";
 import SocialLinks from "@/components/SocialLinks";
+import Stats from "@/components/Stats";
 
 export default function Home() {
   return (
@@ -18,9 +19,9 @@ export default function Home() {
               optimizing user experiences. Quick learner, always up to date with
               the latest technology. Let&#39;s connect and exchange knowledge.
             </p>
-            <div className="mb-8 xl:b-0">
+            <div className="mb-8 xl:b-0 ">
               <SocialLinks
-                containerStyle="flex gap-6"
+                containerStyle="flex gap-6 items-center justify-center xl:items-start xl:justify-start"
                 iconStyle="w-9 h-9 border border-accent rounded-full flex items-center justify-center text-accent hover:bg-accent hover:text-primary hover:transition-all duration-500"
               />
             </div>
@@ -30,6 +31,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Stats />
     </section>
   );
 }
