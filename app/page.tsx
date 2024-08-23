@@ -1,6 +1,6 @@
-import Photo from "@/components/Photo";
-import SocialLinks from "@/components/SocialLinks";
-import Stats from "@/components/Stats";
+import Photo from '@/components/Photo';
+import SocialLinks from '@/components/SocialLinks';
+import Stats from '@/components/Stats';
 
 export default function Home() {
   return (
@@ -10,14 +10,13 @@ export default function Home() {
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Senior Frontend Software Engineer</span>
             <h1 className="h1 mb-6">
-              Hello I&#39;m <br />{" "}
-              <span className="text-accent">Nihad Kerić</span>
+              Hello I&#39;m <br /> <span className="text-accent">Nihad Kerić</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Experienced frontend developer with over 8 years of experiences.
-              Passionate about designing intuitive user interfaces and
-              optimizing user experiences. Quick learner, always up to date with
-              the latest technology. Let&#39;s connect and exchange knowledge.
+              Experienced frontend developer with over 8 years of experiences. Passionate about
+              designing intuitive user interfaces and optimizing user experiences. Quick
+              learner, always up to date with the latest technology. Let&#39;s connect and
+              exchange knowledge.
             </p>
             <div className="mb-8 xl:b-0 ">
               <SocialLinks

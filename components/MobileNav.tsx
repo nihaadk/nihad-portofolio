@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { ReactElement } from "react";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import { usePathname } from "next/navigation";
-import { CiMenuFries } from "react-icons/ci";
-import { LINKS, NavItem } from "@/utils/nav.util";
-import Link from "next/link";
+import { ReactElement } from 'react';
+import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet';
+import { usePathname } from 'next/navigation';
+import { CiMenuFries } from 'react-icons/ci';
+import { LINKS, NavItem } from '@/utils/nav.util';
+import Link from 'next/link';
 
 const links: NavItem[] = LINKS;
 
@@ -30,7 +30,7 @@ const MobileNav = (): ReactElement => {
               key={index}
               href={link.path}
               className={`${
-                link.path === pathname && "text-accent border-b-2 border-accent"
+                link.path === pathname && 'text-accent border-b-2 border-accent'
               } text-xl capitalize hover:text-accent transition-all`}
             >
               {link.name}

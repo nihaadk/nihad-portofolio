@@ -1,15 +1,15 @@
-import { animate, motion } from "framer-motion";
-import { init } from "next/dist/compiled/webpack/webpack";
+import { animate, motion } from 'framer-motion';
+import { init } from 'next/dist/compiled/webpack/webpack';
 
 const stairAnimation = {
   initial: {
-    top: "0%",
+    top: '0%',
   },
   animate: {
-    top: "100%",
+    top: '100%',
   },
   exit: {
-    top: ["100%", "0%"],
+    top: ['100%', '0%'],
   },
 };
 
@@ -30,7 +30,7 @@ const Stairs = () => {
           exit="exit"
           transition={{
             duration: 0.4,
-            ease: "easeInOut",
+            ease: 'easeInOut',
             delay: reverseIndex(index) * 0.1,
           }}
           className="h-full w-full bg-white relative"

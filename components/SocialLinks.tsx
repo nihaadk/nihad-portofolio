@@ -1,6 +1,6 @@
-import { ReactElement } from "react";
-import { IconType } from "react-icons";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { ReactElement } from 'react';
+import { IconType } from 'react-icons';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 interface SocialLink {
   icon: ReactElement<IconType>;
@@ -15,22 +15,19 @@ interface SocialLinksProps {
 const socialLinks: SocialLink[] = [
   {
     icon: <FaGithub />,
-    path: "",
+    path: '',
   },
   {
     icon: <FaLinkedin />,
-    path: "",
+    path: '',
   },
   {
     icon: <FaTwitter />,
-    path: "",
+    path: '',
   },
 ];
 
-const SocialLinks: React.FC<SocialLinksProps> = ({
-  containerStyle,
-  iconStyle,
-}) => {
+const SocialLinks: React.FC<SocialLinksProps> = ({ containerStyle, iconStyle }) => {
   return (
     <div className={containerStyle}>
       {socialLinks.map((social, index) => (

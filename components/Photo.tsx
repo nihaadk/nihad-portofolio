@@ -1,7 +1,7 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
-import Image from "next/image";
+import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const Photo = () => {
   return (
@@ -13,7 +13,7 @@ const Photo = () => {
           transition: {
             delay: 2,
             duration: 0.4,
-            ease: "easeIn",
+            ease: 'easeIn',
           },
         }}
       >

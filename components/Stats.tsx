@@ -1,6 +1,6 @@
-"use client";
+'use client';
 
-import CountUp from "react-countup";
+import CountUp from 'react-countup';
 
 interface Stat {
   number: number;
@@ -10,19 +10,19 @@ interface Stat {
 const stats: Stat[] = [
   {
     number: 8,
-    text: "Years of experience",
+    text: 'Years of experience',
   },
   {
     number: 20,
-    text: "Projects completed",
+    text: 'Projects completed',
   },
   {
     number: 8,
-    text: "Technologies mastered",
+    text: 'Technologies mastered',
   },
   {
     number: 600,
-    text: "Code commits",
+    text: 'Code commits',
   },
 ];
 
@@ -45,7 +45,7 @@ const Stats = () => {
                 />
                 <p
                   className={`${
-                    stat.text.length < 25 ? "max-w-[100px]" : "max-w[150px]"
+                    stat.text.length < 25 ? 'max-w-[100px]' : 'max-w[150px]'
                   } leading-6 text-white/80`}
                 >
                   {stat.text}

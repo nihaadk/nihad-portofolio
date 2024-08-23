@@ -22,11 +22,8 @@
   .text-outline {
     -webkit-text-stroke: 3px #ffffff;
   }
-  
+
   .text-outline-hover {
-    -webkit-text-stroke: 3px #C6FF00;
+    -webkit-text-stroke: 3px #c6ff00;
   }
 }
-
-
-
