@@ -18,12 +18,6 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 interface AboutItem {
   title: string;
   description: string;
-  info: InfoItem[];
-}
-
-interface InfoItem {
-  fieldName: string;
-  fieldValue: string;
 }
 
 const about: AboutItem = {
