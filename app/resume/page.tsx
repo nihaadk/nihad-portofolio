@@ -1,8 +1,14 @@
 'use client';
 
-import { Description } from '@radix-ui/react-dialog';
-import { title } from 'process';
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from 'react-icons/fa';
+import {
+  FaHtml5,
+  FaCss3,
+  FaJs,
+  FaReact,
+  FaFigma,
+  FaNodeJs,
+  FaBootstrap,
+} from 'react-icons/fa';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   Tooltip,
@@ -10,10 +16,18 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import { SiTailwindcss, SiNextdotjs } from 'react-icons/si';
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiAngular,
+  SiNgrx,
+  SiNestjs,
+} from 'react-icons/si';
 import { FaCircle } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { ScrollArea } from '@/components/ui/scroll-area';
+import { IoLogoIonic } from 'react-icons/io';
 
 interface AboutItem {
   title: string;
@@ -30,27 +44,32 @@ const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My Experience',
   description:
-    'I have worked on a variety of projects ranging from small websites to large web applications. I have experience with both front-end and back-end technologies and am always looking to learn more.',
+    'I have worked on a variety of projects ranging from small websites to large web applications. "I have more experience in frontend technologies and some in backend, but Im always eager to learn more."',
   items: [
     {
       company: 'Emineo AG',
-      position: 'Frontend Developer',
-      duration: '2018 - Present',
+      position: 'Senior Frontend Engineer',
+      duration: '2023 - Present',
     },
     {
-      company: 'Freelance',
-      position: 'Web Developer',
-      duration: '2015 - 2018',
+      company: 'Emineo AG',
+      position: 'Frontend Engineer',
+      duration: '2019 - 2023',
     },
     {
-      company: 'Freelance',
-      position: 'Graphic Designer',
-      duration: '2012 - 2015',
+      company: 'Hapa AG - Coesia Group',
+      position: 'Frontend Engineer',
+      duration: '2017 - 2019',
     },
     {
-      company: 'Freelance',
-      position: 'Graphic Designer',
-      duration: '2012 - 2015',
+      company: 'Slovenia Post',
+      position: 'Project Manager',
+      duration: '2017',
+    },
+    {
+      company: 'Slovenia Post',
+      position: 'Software Engineer',
+      duration: '2015 - 2017',
     },
   ],
 };
@@ -148,16 +167,46 @@ const skills = {
       icon: <FaJs />,
     },
     {
+      name: 'TypeScript',
+      icon: <SiTypescript />,
+    },
+    {
+      name: 'Angular',
+      icon: <SiAngular />,
+    },
+
+    {
+      name: 'NgRx',
+      icon: <SiNgrx />,
+    },
+    {
+      name: 'Ionic',
+      icon: <IoLogoIonic />,
+    },
+
+    {
       name: 'React',
       icon: <FaReact />,
+    },
+    {
+      name: 'Next.js',
+      icon: <SiNextdotjs />,
+    },
+    {
+      name: 'Bootstrap',
+      icon: <FaBootstrap />,
     },
     {
       name: 'Tailwind CSS',
       icon: <SiTailwindcss />,
     },
     {
-      name: 'Next.js',
-      icon: <SiNextdotjs />,
+      name: 'Node.js',
+      icon: <FaNodeJs />,
+    },
+    {
+      name: 'Nest.js',
+      icon: <SiNestjs />,
     },
     {
       name: 'Figma',

@@ -12,16 +12,19 @@ export default function Home() {
             <h1 className="h1 mb-6">
               Hello I&#39;m <br /> <span className="text-accent">Nihad Kerić</span>
             </h1>
+            <p className="max-w-[500px] mb-3 text-white/80">
+              Frontend Software Engineer with over 8+ years of experiences. Passionate about
+              designing intuitive <span className="text-accent font-extrabold">UI</span> and
+              optimizing <span className="text-accent font-extrabold">UX</span>.
+            </p>
             <p className="max-w-[500px] mb-9 text-white/80">
-              Experienced frontend developer with over 8 years of experiences. Passionate about
-              designing intuitive user interfaces and optimizing user experiences. Quick
-              learner, always up to date with the latest technology. Let&#39;s connect and
-              exchange knowledge.
+              Quick learner, always up to date with the latest technology. Let&#39;s connect
+              and exchange knowledge.
             </p>
             <div className="mb-8 xl:b-0 ">
               <SocialLinks
                 containerStyle="flex gap-6 items-center justify-center xl:items-start xl:justify-start"
-                iconStyle="w-9 h-9 border border-accent rounded-full flex items-center justify-center text-accent hover:bg-accent hover:text-primary hover:transition-all duration-500"
+                iconStyle="w-12 h-12 border border-accent rounded-full flex items-center justify-center text-accent hover:bg-accent hover:text-primary hover:transition-all duration-500"
               />
             </div>
           </div>

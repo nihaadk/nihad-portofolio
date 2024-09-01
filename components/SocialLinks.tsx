@@ -1,10 +1,18 @@
 import { ReactElement } from 'react';
 import { IconType } from 'react-icons';
-import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaXing } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '@/components/ui/tooltip';
 
 interface SocialLink {
   icon: ReactElement<IconType>;
   path: string;
+  title: string;
 }
 
 interface SocialLinksProps {
@@ -15,15 +23,23 @@ interface SocialLinksProps {
 const socialLinks: SocialLink[] = [
   {
     icon: <FaGithub />,
-    path: '',
+    path: 'https://github.com/nihaadk',
+    title: 'Github',
   },
   {
     icon: <FaLinkedin />,
-    path: '',
+    path: 'https://www.linkedin.com/in/nihkrc/',
+    title: 'LinkedIn',
   },
   {
-    icon: <FaTwitter />,
-    path: '',
+    icon: <FaXTwitter />,
+    path: 'https://x.com/n1hkrc',
+    title: 'Twitter/X',
+  },
+  {
+    icon: <FaXing />,
+    path: 'https://www.xing.com/profile/Nihad_Keric',
+    title: 'Xing',
   },
 ];
 
@@ -31,9 +47,18 @@ const SocialLinks: React.FC<SocialLinksProps> = ({ containerStyle, iconStyle }) 
   return (
     <div className={containerStyle}>
       {socialLinks.map((social, index) => (
-        <a key={index} href={social.path} target="_blank" className={iconStyle}>
-          {social.icon}
-        </a>
+        <TooltipProvider key={index}>
+          <Tooltip>
+            <TooltipTrigger>
+              <a key={index} href={social.path} target="_blank" className={iconStyle}>
+                {social.icon}
+              </a>
+            </TooltipTrigger>
+            <TooltipContent>
+              <p className="capitalize">{social.title}</p>
+            </TooltipContent>
+          </Tooltip>
+        </TooltipProvider>
       ))}
     </div>
   );

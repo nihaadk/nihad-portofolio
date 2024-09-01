@@ -16,27 +16,30 @@ const services = [
     number: '01',
     title: 'Web Development',
     description:
-      'We build websites that serve as powerful marketing tools and bring memorable brand experiences.',
+      'I create customized, user-friendly websites that perfectly represent your brand online. From concept to execution – everything is handled from a single source.',
     href: '',
   },
   {
     number: '02',
     title: 'UI/UX Design',
     description:
-      'We design user-friendly, clean and modern interfaces that your users will love.',
+      'I develop intuitive and appealing user interfaces that delight your users. With a strong focus on usability and aesthetics, I ensure that your digital products not only look great but are also easy to use.',
     href: '',
   },
+
   {
     number: '03',
-    title: 'Graphic Design',
-    description: 'We deliver eye-catching, memorable experiences that connect with people.',
+    title: 'Architecture',
+    description:
+      'I design robust and scalable software architectures that form the foundation for sustainable and high-performance applications. Through thoughtful planning and clear structures, I enable you to realize efficient and future-proof software solutions.',
     href: '',
   },
+
   {
     number: '04',
-    title: 'Digital Marketing',
+    title: 'Graphic Design',
     description:
-      'Digital marketing solutions that help you rank higher on Google, get more leads, and increase revenue.',
+      'I create visually compelling designs that make your brand strong and distinctive. Whether logos, marketing materials, or digital media – my designs convey your message clearly and aesthetically.',
     href: '',
   },
 ];
@@ -55,7 +58,7 @@ const Services = () => {
               ease: 'easeIn',
             },
           }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-36"
+          className="grid grid-cols-1 md:grid-cols-2 gap-28"
         >
           {services.map((service: Service, index: number) => (
             <div key={index} className="flex-1 flex flex-col justify-center gap-6 group">

@@ -11,36 +11,58 @@ import SwiperSlideButtons from '@/components/SwiperSlideButtons';
 const projects = [
   {
     index: '01',
-    category: 'Web Development',
-    title: 'Project 1',
+    title: 'Fine Calculator',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    stack: [{ name: 'React' }, { name: 'TypeScript' }, { name: 'Tailwind CSS' }],
-    image: '/assets/work/thumb1.png',
-    github: 'https://github.com',
-    live: 'https://github.com',
+      'With the FineCalculator, you can calculate the fine for speeding. The project was created solely to test the SignalStore and is not intended for real-world use.',
+    stack: [{ name: 'Angular' }, { name: 'daisyui' }, { name: 'SignalStore' }],
+    image: '/assets/work/fineCalc.png',
+    github: 'https://github.com/nihaadk/fine-calculator',
+    live: 'https://fine-calculator-n6wn64h6z-nihadk.vercel.app/',
   },
   {
     index: '02',
-    category: 'Frontend Development',
-    title: 'Project 2',
+    title: 'ZhPrivateTax',
     description:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    stack: [{ name: 'React' }, { name: 'TypeScript' }, { name: 'Tailwind CSS' }],
-    image: '/assets/work/thumb2.png',
-    github: 'https://github.com',
-    live: 'https://github.com',
+      'ZHprivateTax is the online tax declaration service of the Canton of Zurich which allows taxpayers to declare their taxes. I worked on the frontend engineer of this project at Emineo AG.',
+    stack: [{ name: 'Angular' }, { name: 'RxJS' }, { name: 'Angular Material' }],
+    image: '/assets/work/zhprivatetax.png',
+    live: 'https://zhp.services.zh.ch/app/ZHprivateTax/',
   },
   {
     index: '03',
-    category: 'Frontend Development',
-    title: 'Project 3',
+    title: 'Drittmeldung',
     description:
-      'Lorem ipsum def dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    stack: [{ name: 'React' }, { name: 'TypeScript' }, { name: 'Tailwind CSS' }],
-    image: '/assets/work/thumb3.png',
-    github: 'https://github.com',
-    live: 'https://github.com',
+      'With Drittmeldepflicht.ch, small and medium-sized administrations, landlords, or property owners who do not have a property management system connected to sedex can electronically record tenant move-ins and move-outs. I worked as a frontend engineer on this project at Emineo AG.',
+    stack: [
+      { name: 'Angular' },
+      { name: 'RxJS' },
+      { name: 'Bootstrap' },
+      { name: 'Angular Material' },
+    ],
+    image: '/assets/work/drittmeldung.png',
+    live: 'https://Drittmeldung.ch/',
+  },
+  {
+    index: '04',
+    title: 'Citysoftnet',
+    description:
+      'The project implements a shared Case Management System (CMS), which provides the necessary functions for case management and the associated financial functions in social assistance, child and youth welfare, as well as in the area of child protection mandates (KES). The software was developed for the cities of Bern, Zurich, and Basel. I worked as a frontend engineer on this project at Emineo AG.',
+    stack: [
+      { name: 'Angular' },
+      { name: 'RxJS' },
+      { name: 'NgRx' },
+      { name: 'Angular Material' },
+    ],
+    image: '/assets/work/csn.png',
+    live: 'http://www.citysoftnet.ch',
+  },
+  {
+    index: '05',
+    title: 'NK Portofolio',
+    description: 'This Website is my Portofoilo. And describes my skills and projects.',
+    stack: [{ name: 'Next.js' }, { name: 'Tailwind CSS' }],
+    image: '/assets/work/nk-portofolio.png',
+    live: '',
   },
 ];
 
@@ -66,7 +88,7 @@ const Work = () => {
                 {project.index}
               </div>
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500 capitalize">
-                {project.category} project
+                {project.title}
               </h2>
               <p className="text-white/60">{project.description}</p>
               <ul className="flex gap-4">
@@ -87,11 +109,13 @@ const Work = () => {
                   icon={<BsArrowUpRight />}
                 />
 
-                <LinkButton
-                  link={project.github}
-                  text="Github repository"
-                  icon={<BsGithub />}
-                />
+                {project.github && (
+                  <LinkButton
+                    link={project.github}
+                    text="Github repository"
+                    icon={<BsGithub />}
+                  />
+                )}
               </div>
             </div>
           </div>
@@ -106,13 +130,13 @@ const Work = () => {
               {projects.map((project, index) => {
                 return (
                   <SwiperSlide key={index} className="w-full">
-                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20">
+                    <div className="h-[460px] relative group flex justify-center items-center bg-pink-50/20 rounded-full">
                       <div className="absolute top-0 bottom-0 w-full bg-black/10 z-10"></div>
                       <div className="relative w-full h-full">
                         <Image
                           src={project.image}
                           fill
-                          className="object-cover"
+                          className="object-cover rounded-2xl"
                           alt={project.description}
                         />
                       </div>
