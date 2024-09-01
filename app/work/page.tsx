@@ -21,6 +21,15 @@ const projects = [
   },
   {
     index: '02',
+    title: 'HMI Dashboard',
+    description:
+      'The HMI used in Optimate provides a user-friendly interface for monitoring and controlling machinery and processes. It allows users to visualize and manage complex data and control functions in an intuitive way, enhancing efficiency and productivity. The system offers straightforward controls and real-time feedback, enabling quick adjustments and precise management.',
+    stack: [{ name: 'Angular.JS' }, { name: 'WebSocket' }],
+    image: '/assets/work/hmi.png',
+    live: 'https://www.hapa.ch/en/solutions/product/web-40-5d',
+  },
+  {
+    index: '03',
     title: 'ZhPrivateTax',
     description:
       'ZHprivateTax is the online tax declaration service of the Canton of Zurich which allows taxpayers to declare their taxes. I worked on the frontend engineer of this project at Emineo AG.',
@@ -29,7 +38,7 @@ const projects = [
     live: 'https://zhp.services.zh.ch/app/ZHprivateTax/',
   },
   {
-    index: '03',
+    index: '04',
     title: 'Drittmeldung',
     description:
       'With Drittmeldepflicht.ch, small and medium-sized administrations, landlords, or property owners who do not have a property management system connected to sedex can electronically record tenant move-ins and move-outs. I worked as a frontend engineer on this project at Emineo AG.',
@@ -43,7 +52,7 @@ const projects = [
     live: 'https://Drittmeldung.ch/',
   },
   {
-    index: '04',
+    index: '05',
     title: 'Citysoftnet',
     description:
       'The project implements a shared Case Management System (CMS), which provides the necessary functions for case management and the associated financial functions in social assistance, child and youth welfare, as well as in the area of child protection mandates (KES). The software was developed for the cities of Bern, Zurich, and Basel. I worked as a frontend engineer on this project at Emineo AG.',
@@ -57,7 +66,7 @@ const projects = [
     live: 'http://www.citysoftnet.ch',
   },
   {
-    index: '05',
+    index: '06',
     title: 'NK Portofolio',
     description: 'This Website is my Portofoilo. And describes my skills and projects.',
     stack: [{ name: 'Next.js' }, { name: 'Tailwind CSS' }],
