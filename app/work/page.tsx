@@ -24,7 +24,7 @@ const projects = [
     title: 'HMI Dashboard',
     description:
       'The HMI used in Optimate provides a user-friendly interface for monitoring and controlling machinery and processes. It allows users to visualize and manage complex data and control functions in an intuitive way, enhancing efficiency and productivity. The system offers straightforward controls and real-time feedback, enabling quick adjustments and precise management.',
-    stack: [{ name: 'Angular.JS' }, { name: 'WebSocket' }],
+    stack: [{ name: 'Angular.JS' }, { name: 'WebSocket' }, { name: 'UX/UI Design' }],
     image: '/assets/work/hmi.png',
     live: 'https://www.hapa.ch/en/solutions/product/web-40-5d',
   },
