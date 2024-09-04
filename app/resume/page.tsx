@@ -44,7 +44,7 @@ const experience = {
   icon: '/assets/resume/badge.svg',
   title: 'My Experience',
   description:
-    'I have worked on a variety of projects ranging from small websites to large web applications. "I have more experience in frontend technologies and some in backend, but Im always eager to learn more."',
+    'I have worked on a variety of projects ranging from small websites to large web applications. I have more experience in frontend technologies and some in backend, but Im always eager to learn more.',
   items: [
     {
       company: 'Emineo AG',

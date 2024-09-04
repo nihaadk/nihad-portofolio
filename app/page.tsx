@@ -13,8 +13,8 @@ export default function Home() {
               Hello I&#39;m <br /> <span className="text-accent">Nihad Kerić</span>
             </h1>
             <p className="max-w-[500px] mb-3 text-white/80">
-              Frontend Software Engineer with over 8+ years of experiences. Passionate about
-              designing intuitive <span className="text-accent font-extrabold">UI</span> and
+              Frontend Software Engineer with over 8 years of experience. Passionate about
+              designing intuitive <span className="text-accent font-extrabold">UIs</span> and
               optimizing <span className="text-accent font-extrabold">UX</span>.
             </p>
             <p className="max-w-[500px] mb-9 text-white/80">

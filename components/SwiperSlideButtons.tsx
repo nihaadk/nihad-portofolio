@@ -10,10 +10,10 @@ const SwiperSlideButtons = ({ containerStyles, buttonStyles }: SwiperSlideButton
   const swiper = useSwiper();
   return (
     <div className={containerStyles}>
-      <button className={buttonStyles}>
+      <button className={buttonStyles} aria-label="slide preview button">
         <PiCaretLeftBold onClick={() => swiper.slidePrev()} />
       </button>
-      <button className={buttonStyles}>
+      <button className={buttonStyles} aria-label="slide next button">
         <PiCaretRightBold onClick={() => swiper.slideNext()} />
       </button>
     </div>

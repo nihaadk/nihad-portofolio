@@ -67,6 +67,7 @@ const Services = () => {
                   {service.number}
                 </div>
                 <Link
+                  aria-label={service.title}
                   href={service.href}
                   className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex items-center justify-center hover:-rotate-45"
                 >

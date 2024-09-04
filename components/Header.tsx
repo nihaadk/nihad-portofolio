@@ -7,7 +7,7 @@ const Header = () => {
   return (
     <header className="py-8 xl:py-12 test-white ">
       <div className="container max-auto flex justify-between items-center">
-        <Link href="/">
+        <Link href="/" aria-label="Home page">
           <h1 className="text-4xl font-semibold">
             Nihad <span className="text-accent">#</span>
           </h1>
@@ -17,7 +17,9 @@ const Header = () => {
           <Nav />
 
           <Link href="/contact">
-            <Button>Hire me</Button>
+            <Button aria-label="This is a button with text Hire me" title="Button Hire me">
+              Hire me
+            </Button>
           </Link>
         </div>
 

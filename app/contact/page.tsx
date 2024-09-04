@@ -44,21 +44,27 @@ const Contact = () => {
         <div className="flex flex-col xl:flex-row gap-[30px]">
           <div className="xl:w-[60%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-primary-light rounded-xl">
-              <h3 className="text-4xl text-accent">Lets work together</h3>
+              <h2 className="text-4xl text-accent">Lets work together</h2>
               <p className="text-white/60">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi beatae
-                dolores error inventore, commodi tempora illum natus voluptatibus dolor labore
-                esse necessitatibus repudiandae eum minus, iusto sit vero itaque id!
+                I help bring your ideas to life by supporting your digital transformations. As
+                an experienced Frontend Software Engineer, I turn your concepts into modern,
+                user-friendly, and responsive web applications. Together, we can create
+                innovative digital solutions that bring your vision to reality and strengthen
+                your presence in the digital space.
               </p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <Input type="firstname" placeholder="Firstname" />
-                <Input type="lastname" placeholder="Lastname" />
-                <Input type="email" placeholder="Email address" />
-                <Input type="phone" placeholder="Phone number" />
+                <Input aria-label="firstname" type="firstname" placeholder="Firstname" />
+                <Input aria-label="lastname" type="lastname" placeholder="Lastname" />
+                <Input aria-label="email" type="email" placeholder="Email address" />
+                <Input aria-label="phone" type="phone" placeholder="Phone number" />
               </div>
-              <Textarea className="h-[200px]" placeholder="Type your message here" />
+              <Textarea
+                aria-label="message"
+                className="h-[200px]"
+                placeholder="Type your message here"
+              />
 
-              <Button size={'default'} className="max-w-40">
+              <Button aria-label="Send Message button" size={'default'} className="max-w-40">
                 Send message
               </Button>
             </form>
@@ -71,7 +77,7 @@ const Contact = () => {
                     <div className="text-[28px]">{item.icon}</div>
                   </div>
                   <div className="flex-1">
-                    <h5 className="text-white/60">{item.title}</h5>
+                    <h3 className="text-white/60">{item.title}</h3>
                     <p className="text-xl">{item.value}</p>
                   </div>
                 </li>

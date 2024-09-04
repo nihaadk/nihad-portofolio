@@ -8,6 +8,7 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import Link from 'next/link';
 
 interface SocialLink {
   icon: ReactElement<IconType>;
@@ -49,10 +50,16 @@ const SocialLinks: React.FC<SocialLinksProps> = ({ containerStyle, iconStyle }) 
       {socialLinks.map((social, index) => (
         <TooltipProvider key={index}>
           <Tooltip>
-            <TooltipTrigger>
-              <a key={index} href={social.path} target="_blank" className={iconStyle}>
+            <TooltipTrigger aria-label="Social button" title={social.title}>
+              <Link
+                aria-label={social.title}
+                key={index}
+                href={social.path}
+                target="_blank"
+                className={iconStyle}
+              >
                 {social.icon}
-              </a>
+              </Link>
             </TooltipTrigger>
             <TooltipContent>
               <p className="capitalize">{social.title}</p>

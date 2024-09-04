@@ -30,15 +30,6 @@ const projects = [
   },
   {
     index: '03',
-    title: 'ZhPrivateTax',
-    description:
-      'ZHprivateTax is the online tax declaration service of the Canton of Zurich which allows taxpayers to declare their taxes. I worked on the frontend engineer of this project at Emineo AG.',
-    stack: [{ name: 'Angular' }, { name: 'RxJS' }, { name: 'Angular Material' }],
-    image: '/assets/work/zhprivatetax.png',
-    live: 'https://zhp.services.zh.ch/app/ZHprivateTax/',
-  },
-  {
-    index: '04',
     title: 'Drittmeldung',
     description:
       'With Drittmeldepflicht.ch, small and medium-sized administrations, landlords, or property owners who do not have a property management system connected to sedex can electronically record tenant move-ins and move-outs. I worked as a frontend engineer on this project at Emineo AG.',
@@ -52,23 +43,9 @@ const projects = [
     live: 'https://Drittmeldung.ch/',
   },
   {
-    index: '05',
-    title: 'Citysoftnet',
-    description:
-      'The project implements a shared Case Management System (CMS), which provides the necessary functions for case management and the associated financial functions in social assistance, child and youth welfare, as well as in the area of child protection mandates (KES). The software was developed for the cities of Bern, Zurich, and Basel. I worked as a frontend engineer on this project at Emineo AG.',
-    stack: [
-      { name: 'Angular' },
-      { name: 'RxJS' },
-      { name: 'NgRx' },
-      { name: 'Angular Material' },
-    ],
-    image: '/assets/work/csn.png',
-    live: 'http://www.citysoftnet.ch',
-  },
-  {
-    index: '06',
-    title: 'NK Portofolio',
-    description: 'This Website is my Portofoilo. And describes my skills and projects.',
+    index: '04',
+    title: 'NK Portfolio',
+    description: 'This Website is my Portfolio. And describes my skills and projects.',
     stack: [{ name: 'Next.js' }, { name: 'Tailwind CSS' }],
     image: '/assets/work/nk-portofolio.png',
     live: '',
@@ -146,7 +123,7 @@ const Work = () => {
                           src={project.image}
                           fill
                           className="object-cover rounded-2xl"
-                          alt={project.description}
+                          alt={`A mockup photo of the ${project.title} project showing both desktop and mobile views.`}
                         />
                       </div>
                     </div>

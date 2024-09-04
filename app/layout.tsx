@@ -14,7 +14,7 @@ const mono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: 'Nihad - Frontend Software Engineer',
   description:
-    'Frontend Software Engineer with over 8+ years of experiences. Passionate about designing intuitive UI and optimizing UX.',
+    'Frontend Software Engineer with over 8 years of experience. Passionate about designing intuitive UIs and optimizing UX.',
 };
 
 export default function RootLayout({

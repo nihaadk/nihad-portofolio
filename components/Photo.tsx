@@ -23,7 +23,7 @@ const Photo = () => {
             priority
             fill
             quality={100}
-            alt="Photo"
+            alt="Profile photo"
             className="object-contain "
           />
         </div>

@@ -18,7 +18,7 @@ const MobileNav = (): ReactElement => {
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <div className="mt-32 mb-40 text-center text-2xl">
-          <Link href="/">
+          <Link href="/" aria-label="Home page">
             <h1 className="text-4xl font-semibold">
               Nihad <span className="text-accent">#</span>
             </h1>
@@ -27,6 +27,7 @@ const MobileNav = (): ReactElement => {
         <nav className="flex flex-col justify-center items-center gap-8">
           {LINKS.map((link, index) => (
             <Link
+              aria-label={link.name}
               key={index}
               href={link.path}
               className={`${
