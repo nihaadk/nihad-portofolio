@@ -28,6 +28,8 @@ import { FaCircle } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { IoLogoIonic } from 'react-icons/io';
+import { FaGitAlt } from "react-icons/fa";
+import { FaGitlab } from "react-icons/fa";
 
 interface AboutItem {
   title: string;
@@ -212,6 +214,14 @@ const skills = {
       name: 'Figma',
       icon: <FaFigma />,
     },
+    {
+      name: 'Github',
+      icon: <FaGitAlt />,
+    },
+    {
+      name:'GitLab',
+      icon: <FaGitlab/>
+    }
   ],
 };
 
