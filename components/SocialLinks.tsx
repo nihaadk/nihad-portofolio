@@ -2,6 +2,7 @@ import { ReactElement } from 'react';
 import { IconType } from 'react-icons';
 import { FaGithub, FaLinkedin, FaXing } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
+import { SiStackblitz } from "react-icons/si";
 import {
   Tooltip,
   TooltipContent,
@@ -26,6 +27,11 @@ const socialLinks: SocialLink[] = [
     icon: <FaGithub />,
     path: 'https://github.com/nihaadk',
     title: 'Github',
+  },
+  {
+    icon: <SiStackblitz/>,
+    path: 'https://stackblitz.com/@nihaadk',
+    title: 'Stackblitz'
   },
   {
     icon: <FaLinkedin />,
