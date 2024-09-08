@@ -111,7 +111,6 @@ const Work = () => {
               slidesPerView={1}
               className="xl:h-[520px] mb-12"
               onSlideChange={handleSlideChange}
-              onSwiper={swiper => console.log(swiper)}
             >
               {projects.map((project, index) => {
                 return (
