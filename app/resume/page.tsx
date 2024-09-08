@@ -28,8 +28,8 @@ import { FaCircle } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
 import { ScrollArea } from '@/components/ui/scroll-area';
 import { IoLogoIonic } from 'react-icons/io';
-import { FaGitAlt } from "react-icons/fa";
-import { FaGitlab } from "react-icons/fa";
+import { FaGitAlt } from 'react-icons/fa';
+import { FaGitlab } from 'react-icons/fa';
 
 interface AboutItem {
   title: string;
@@ -39,7 +39,7 @@ interface AboutItem {
 const about: AboutItem = {
   title: 'About Me',
   description:
-    'I am a Software Engineer with focus on Frontend with over 8 years of experience, passionate about creating beautiful and functional web applications. With Slovenian nationality and work permits for both the EU and Switzerland, I bring a strong background in various technologies and a dedication to continuous learning. I speak Bosnian, Slovenian, English, and German Languages.',
+    "I am a Software Engineer with focus on Frontend with over 8 years of experience, passionate about creating beautiful and functional web applications. With Slovenian nationality and work permits for both the EU and Switzerland, I bring a strong background in various technologies and a dedication to continuous learning. I speak Bosnian, Slovenian, English, and German Languages. I regularly pursue further education and aim for continuous development. In the tech industry, it's essential to stay on top of things to keep up with the latest trends and technologies.",
 };
 
 const experience = {
@@ -219,9 +219,9 @@ const skills = {
       icon: <FaGitAlt />,
     },
     {
-      name:'GitLab',
-      icon: <FaGitlab/>
-    }
+      name: 'GitLab',
+      icon: <FaGitlab />,
+    },
   ],
 };
 
