@@ -49,9 +49,14 @@ const experience = {
     'I have worked on a variety of projects ranging from small websites to large web applications. I have more experience in frontend technologies and some in backend, but Im always eager to learn more.',
   items: [
     {
+      company: 'Zurich Insurance',
+      position: 'Senior Frontend Engineer',
+      duration: '2025 - Present',
+    },
+    {
       company: 'Emineo AG',
       position: 'Senior Frontend Engineer',
-      duration: '2023 - Present',
+      duration: '2023 - 2025',
     },
     {
       company: 'Emineo AG',
