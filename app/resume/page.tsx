@@ -8,6 +8,7 @@ import {
   FaFigma,
   FaNodeJs,
   FaBootstrap,
+  FaGithub,
 } from 'react-icons/fa';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
