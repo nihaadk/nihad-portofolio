@@ -42,7 +42,7 @@ const Contact = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
-          <div className="xl:w-[60%] order-2 xl:order-none">
+{/*           <div className="xl:w-[60%] order-2 xl:order-none">
             <form className="flex flex-col gap-6 p-10 bg-primary-light rounded-xl">
               <h2 className="text-4xl text-accent">Lets work together</h2>
               <p className="text-white/60">
@@ -68,7 +68,7 @@ const Contact = () => {
                 Send message
               </Button>
             </form>
-          </div>
+          </div> */}
           <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => (
