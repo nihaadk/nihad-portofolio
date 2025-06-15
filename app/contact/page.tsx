@@ -42,7 +42,9 @@ const Contact = () => {
     >
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-[30px]">
-{/*           <div className="xl:w-[60%] order-2 xl:order-none">
+          {/* Rechte Seite (Formular) jetzt links */}
+          <div className="xl:w-[60%] order-2 xl:order-2">
+            {/*
             <form className="flex flex-col gap-6 p-10 bg-primary-light rounded-xl">
               <h2 className="text-4xl text-accent">Lets work together</h2>
               <p className="text-white/60">
@@ -68,8 +70,11 @@ const Contact = () => {
                 Send message
               </Button>
             </form>
-          </div> */}
-          <div className="flex-1 flex items-center xl:justify-end order-1 xl:order-none mb-8 xl:mb-0">
+            */}
+          </div>
+
+          {/* Linke Seite (Info) jetzt rechts */}
+          <div className="flex-1 flex items-center xl:justify-start order-1 xl:order-1 mb-8 xl:mb-0">
             <ul className="flex flex-col gap-10">
               {info.map((item, index) => (
                 <li key={index} className="flex gap-4">
