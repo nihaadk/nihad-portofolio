@@ -221,7 +221,7 @@ const skills = {
     },
     {
       name: 'Github',
-      icon: <FaGitAlt />,
+      icon: <FaGithub />,
     },
     {
       name: 'GitLab',
