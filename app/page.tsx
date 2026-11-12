@@ -8,12 +8,14 @@ export default function Home() {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Senior Frontend Software Engineer</span>
+            <span className="text-xl">
+              Senior Frontend Software Engineer · Angular, TypeScript, React · Zurich, Switzerland
+            </span>
             <h1 className="h1 mb-6">
               Hello I&#39;m <br /> <span className="text-accent">Nihad Kerić</span>
             </h1>
             <p className="max-w-[500px] mb-3 text-white/80">
-              Frontend Software Engineer with over 8 years of experience. Passionate about
+              Nihad Kerić is a Frontend Software Engineer based in Zurich with over 8 years of experience. Passionate about
               designing intuitive <span className="text-accent font-extrabold">UI&#39;s</span>{' '}
               and optimizing <span className="text-accent font-extrabold">UX</span>. Quick
               learner, always up to date with the latest technology.

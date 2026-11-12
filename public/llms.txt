@@ -1,0 +1,38 @@
+# Nihad Kerić
+
+> Nihad Kerić is a Senior Frontend Software Engineer based in Zurich, Switzerland, with over 8 years of experience in Angular, NgRx, TypeScript, React and Next.js. Slovenian citizen with work permits for the EU and Switzerland. Languages: Bosnian, Slovenian, English, German.
+
+## Pages
+- [Home](https://nihad-portofolio.vercel.app/): Introduction and social profiles
+- [Resume](https://nihad-portofolio.vercel.app/resume): Experience, education, skills
+- [Work](https://nihad-portofolio.vercel.app/work): Selected projects
+- [Services](https://nihad-portofolio.vercel.app/services): Web development, UI/UX design, architecture, graphic design
+- [Contact](https://nihad-portofolio.vercel.app/contact): nihadkeric@gmail.com
+
+## Experience
+- Senior Frontend Engineer, Zurich Insurance (2025 - present)
+- Senior Frontend Engineer, Emineo AG (2023 - 2025)
+- Frontend Engineer, Emineo AG (2019 - 2023)
+- Frontend Engineer, Hapa AG - Coesia Group (2017 - 2019)
+- Project Manager, Slovenia Post (2017)
+- Software Engineer, Slovenia Post (2015 - 2017)
+
+## Education
+- BSc Computer Science, University of Ljubljana (2012 - 2016)
+- Courses: Angular, Ionic, React, Next.js, Clean Code, TailwindCSS, Cypress, GitLab CI/CD, Kubernetes
+
+## Skills
+HTML, CSS, JavaScript, TypeScript, Angular, NgRx, Ionic, React, Next.js, NestJS, Node.js, Tailwind CSS, Bootstrap, Figma, Git, GitLab
+
+## Projects
+- HMI Dashboard (Hapa / Optimate): Angular.JS, WebSocket - https://www.hapa.ch/en/solutions/product/web-40-5d
+- Drittmeldung.ch (Emineo AG): Angular, RxJS, Angular Material - https://Drittmeldung.ch/
+- Fine Calculator: Angular, SignalStore, daisyUI - https://github.com/nihaadk/fine-calculator
+- This portfolio: Next.js, Tailwind CSS
+
+## Profiles
+- [GitHub](https://github.com/nihaadk)
+- [LinkedIn](https://www.linkedin.com/in/nihkrc/)
+- [StackBlitz](https://stackblitz.com/@nihaadk)
+- [X](https://x.com/n1hkrc)
+- [Xing](https://www.xing.com/profile/Nihad_Keric)
