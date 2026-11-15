@@ -1,14 +1,13 @@
 'use client';
 
 import { BsArrowDownRight } from 'react-icons/bs';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
+import { CONTACT_EMAIL } from '@/lib/site';
 
 interface Service {
   number: string;
   title: string;
   description: string;
-  href: string;
 }
 
 const services = [
@@ -16,31 +15,25 @@ const services = [
     number: '01',
     title: 'Web Development',
     description:
-      'I create customized, user-friendly websites that perfectly represent your brand online. From concept to execution – everything is handled from a single source.',
-    href: '',
+      'I build fast, maintainable and user-friendly web applications, from the first concept to production. Frontend is my core strength, backed by solid backend knowledge for end-to-end solutions.',
   },
   {
     number: '02',
-    title: 'UI/UX Design',
+    title: 'UI/UX & Product Design',
     description:
-      'I develop intuitive and appealing user interfaces that delight your users. With a strong focus on usability and aesthetics, I ensure that your digital products not only look great but are also easy to use.',
-    href: '',
+      'I design intuitive interfaces and user flows with a strong focus on usability and product thinking. The result is a digital product that looks great, is easy to use and meets real user needs.',
   },
-
   {
     number: '03',
-    title: 'Architecture',
+    title: 'Software Architecture & Integrations',
     description:
-      'I design robust and scalable software architectures that form the foundation for sustainable and high-performance applications. Through thoughtful planning and clear structures, I enable you to realize efficient and future-proof software solutions.',
-    href: '',
+      'I design scalable, well-structured software architectures and connect them cleanly to APIs, third-party services and existing systems. Clear structures make your solution robust and future-proof.',
   },
-
   {
     number: '04',
-    title: 'Graphic Design',
+    title: 'AI Agents & Automation',
     description:
-      'I create visually compelling designs that make your brand strong and distinctive. Whether logos, marketing materials, or digital media – my designs convey your message clearly and aesthetically.',
-    href: '',
+      'I build AI agents and automated workflows that take over repetitive tasks and speed up your processes. I integrate AI in a practical, transparent and controlled way, so you understand what it does and why.',
   },
 ];
 
@@ -48,12 +41,13 @@ const Services = () => {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0 cursor-default">
       <div className="container mx-auto">
+        <h1 className="sr-only">Software engineering services in Zurich, Switzerland</h1>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
             transition: {
-              delay: 2.4,
+              delay: 0.5,
               duration: 0.4,
               ease: 'easeIn',
             },
@@ -66,13 +60,13 @@ const Services = () => {
                 <div className="text-6xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
                   {service.number}
                 </div>
-                <Link
-                  aria-label={service.title}
-                  href={service.href}
+                <a
+                  aria-label={`Email me about ${service.title}`}
+                  href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(service.title)}`}
                   className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex items-center justify-center hover:-rotate-45"
                 >
                   <BsArrowDownRight className="text-primary text-3xl" />
-                </Link>
+                </a>
               </div>
 
               <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">

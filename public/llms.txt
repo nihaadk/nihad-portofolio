@@ -1,16 +1,16 @@
 # Nihad Kerić
 
-> Nihad Kerić is a Senior Frontend Software Engineer based in Zurich, Switzerland, with over 8 years of experience in Angular, NgRx, TypeScript, React and Next.js. Slovenian citizen with work permits for the EU and Switzerland. Languages: Bosnian, Slovenian, English, German.
+> Nihad Kerić is a Software Engineer based in Zurich, Switzerland, with over 8 years of experience, specialising in frontend development with solid backend knowledge. Quick learner who continuously researches new technologies and uses AI to develop faster while fully understanding the code. Slovenian citizen with work permits for the EU and Switzerland. Languages: Bosnian, Slovenian, English, German.
 
 ## Pages
 - [Home](https://nihad-portofolio.vercel.app/): Introduction and social profiles
-- [Resume](https://nihad-portofolio.vercel.app/resume): Experience, education, skills
+- [Resume](https://nihad-portofolio.vercel.app/resume): Experience and skills
 - [Work](https://nihad-portofolio.vercel.app/work): Selected projects
-- [Services](https://nihad-portofolio.vercel.app/services): Web development, UI/UX design, architecture, graphic design
-- [Contact](https://nihad-portofolio.vercel.app/contact): nihadkeric@gmail.com
+- [Services](https://nihad-portofolio.vercel.app/services): Web development, UI/UX & product design, software architecture & integrations, AI agents & automation
+- Email: nihadkeric@gmail.com
 
 ## Experience
-- Senior Frontend Engineer, Zurich Insurance (2025 - present)
+- Senior Software Engineer, Zurich Insurance (2025 - present)
 - Senior Frontend Engineer, Emineo AG (2023 - 2025)
 - Frontend Engineer, Emineo AG (2019 - 2023)
 - Frontend Engineer, Hapa AG - Coesia Group (2017 - 2019)
@@ -22,7 +22,7 @@
 - Courses: Angular, Ionic, React, Next.js, Clean Code, TailwindCSS, Cypress, GitLab CI/CD, Kubernetes
 
 ## Skills
-HTML, CSS, JavaScript, TypeScript, Angular, NgRx, Ionic, React, Next.js, NestJS, Node.js, Tailwind CSS, Bootstrap, Figma, Git, GitLab
+HTML, CSS, JavaScript, TypeScript, Angular, NgRx, Ionic, React, Next.js, NestJS, Node.js, Java, Spring Boot, Playwright, Claude, Figma, Git, GitLab
 
 ## Projects
 - HMI Dashboard (Hapa / Optimate): Angular.JS, WebSocket - https://www.hapa.ch/en/solutions/product/web-40-5d

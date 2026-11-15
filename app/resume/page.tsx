@@ -7,10 +7,9 @@ import {
   FaReact,
   FaFigma,
   FaNodeJs,
-  FaBootstrap,
+  FaJava,
   FaGithub,
 } from 'react-icons/fa';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import {
   Tooltip,
   TooltipContent,
@@ -18,30 +17,19 @@ import {
   TooltipTrigger,
 } from '@/components/ui/tooltip';
 import {
-  SiTailwindcss,
+  SiSpringboot,
+  SiClaude,
   SiNextdotjs,
   SiTypescript,
   SiAngular,
   SiNgrx,
   SiNestjs,
 } from 'react-icons/si';
-import { FaCircle } from 'react-icons/fa6';
+import { FaCircle, FaMasksTheater } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
-import { ScrollArea } from '@/components/ui/scroll-area';
 import { IoLogoIonic } from 'react-icons/io';
 import { FaGitAlt } from 'react-icons/fa';
 import { FaGitlab } from 'react-icons/fa';
-
-interface AboutItem {
-  title: string;
-  description: string;
-}
-
-const about: AboutItem = {
-  title: 'About Me',
-  description:
-    "I am a Software Engineer with focus on Frontend with over 8 years of experience, passionate about creating beautiful and functional web applications. With Slovenian nationality and work permits for both the EU and Switzerland, I bring a strong background in various technologies and a dedication to continuous learning. I speak Bosnian, Slovenian, English, and German Languages. I regularly pursue further education and aim for continuous development. In the tech industry, it's essential to stay on top of things to keep up with the latest trends and technologies.",
-};
 
 const experience = {
   icon: '/assets/resume/badge.svg',
@@ -51,107 +39,39 @@ const experience = {
   items: [
     {
       company: 'Zurich Insurance',
-      position: 'Senior Frontend Engineer',
+      url: 'https://www.zurich.ch',
+      position: 'Senior Software Engineer',
       duration: '2025 - Present',
     },
     {
       company: 'Emineo AG',
+      url: 'https://www.emineo.ch',
       position: 'Senior Frontend Engineer',
       duration: '2023 - 2025',
     },
     {
       company: 'Emineo AG',
+      url: 'https://www.emineo.ch',
       position: 'Frontend Engineer',
       duration: '2019 - 2023',
     },
     {
       company: 'Hapa AG - Coesia Group',
+      url: 'https://www.hapa.ch',
       position: 'Frontend Engineer',
       duration: '2017 - 2019',
     },
     {
       company: 'Slovenia Post',
+      url: 'https://www.epps.si/',
       position: 'Project Manager',
       duration: '2017',
     },
     {
       company: 'Slovenia Post',
+      url: 'https://www.epps.si/',
       position: 'Software Engineer',
       duration: '2015 - 2017',
-    },
-  ],
-};
-
-const education = {
-  icon: '/assets/resume/cap.svg',
-  title: 'My Education',
-  description:
-    'I have a degree in Computer Science and have taken a variety of courses to improve my skills. I am always looking to learn more and stay up-to-date with the latest technologies.',
-  items: [
-    {
-      school: 'University of Ljubljana',
-      degree: 'Bachelor of Science',
-      duration: '2012 - 2016',
-    },
-    {
-      school: 'FreeCodeCamp',
-      degree: 'Frontend Development',
-      duration: '2017',
-    },
-    {
-      school: 'SoftwareArchitect',
-      degree: 'Advanced Angular Workshop',
-      duration: '2019',
-    },
-    {
-      school: 'Academind',
-      degree: 'Angular Complete Guide',
-      duration: '2021',
-    },
-    {
-      school: 'Academind',
-      degree: 'Build iOS, Android with Ionic & Angular',
-      duration: '2021',
-    },
-    {
-      school: 'Academind',
-      degree: 'Clean Code',
-      duration: '2021',
-    },
-    {
-      school: 'Udemy',
-      degree: 'The complete React Fullstack',
-      duration: '2021',
-    },
-    {
-      school: 'Udemy',
-      degree: 'Next.js & React',
-      duration: '2021',
-    },
-    {
-      school: 'Udemy',
-      degree: 'Next.js & React',
-      duration: '2021',
-    },
-    {
-      school: 'Udemy',
-      degree: 'GitLab CI/CD for Beginners',
-      duration: '2021',
-    },
-    {
-      school: 'Udemy',
-      degree: 'TailwindCSS Course',
-      duration: '2022',
-    },
-    {
-      school: 'Udemy',
-      degree: 'Cypress: Web Automation Testing from Zero to Hero',
-      duration: '2022',
-    },
-    {
-      school: 'Letsboot.ch',
-      degree: 'Kubernetes DevOps Course & Training',
-      duration: '2022',
     },
   ],
 };
@@ -164,68 +84,94 @@ const skills = {
   skillList: [
     {
       name: 'HTML',
+      url: 'https://developer.mozilla.org/en-US/docs/Web/HTML',
       icon: <FaHtml5 />,
     },
     {
       name: 'CSS',
+      url: 'https://developer.mozilla.org/en-US/docs/Web/CSS',
       icon: <FaCss3 />,
     },
     {
       name: 'JavaScript',
+      url: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
       icon: <FaJs />,
     },
     {
       name: 'TypeScript',
+      url: 'https://www.typescriptlang.org/',
       icon: <SiTypescript />,
     },
     {
       name: 'Angular',
+      url: 'https://angular.dev/',
       icon: <SiAngular />,
     },
 
     {
       name: 'NgRx',
+      url: 'https://ngrx.io/',
       icon: <SiNgrx />,
     },
     {
       name: 'Ionic',
+      url: 'https://ionicframework.com/',
       icon: <IoLogoIonic />,
     },
 
     {
       name: 'React',
+      url: 'https://react.dev/',
       icon: <FaReact />,
     },
     {
       name: 'Next.js',
+      url: 'https://nextjs.org/',
       icon: <SiNextdotjs />,
     },
     {
-      name: 'Bootstrap',
-      icon: <FaBootstrap />,
-    },
-    {
-      name: 'Tailwind CSS',
-      icon: <SiTailwindcss />,
-    },
-    {
       name: 'Node.js',
+      url: 'https://nodejs.org/',
       icon: <FaNodeJs />,
     },
     {
       name: 'Nest.js',
+      url: 'https://nestjs.com/',
       icon: <SiNestjs />,
     },
     {
+      name: 'Java',
+      url: 'https://www.java.com/',
+      icon: <FaJava />,
+    },
+    {
+      name: 'Spring Boot',
+      url: 'https://spring.io/projects/spring-boot',
+      icon: <SiSpringboot />,
+    },
+    {
+      name: 'Playwright',
+      url: 'https://playwright.dev/',
+      icon: <FaMasksTheater />,
+    },
+    {
+      name: 'Claude',
+      url: 'https://claude.ai/',
+      icon: <SiClaude />,
+    },
+    {
       name: 'Figma',
+      url: 'https://www.figma.com/',
       icon: <FaFigma />,
     },
     {
       name: 'Github',
+      url: 'https://github.com/',
       icon: <FaGithub />,
     },
     {
       name: 'GitLab',
+      url: 'https://about.gitlab.com/',
       icon: <FaGitlab />,
     },
   ],
@@ -238,124 +184,76 @@ const Resume = () => {
       animate={{
         opacity: 1,
         transition: {
-          delay: 2.4,
+          delay: 0.5,
           duration: 0.4,
           ease: 'easeIn',
         },
       }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+      className="py-12 xl:py-0"
     >
-      <div className="container mx-auto">
-        <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
-          <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
-            <TabsTrigger value="experience">Experience</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="skills">Skills</TabsTrigger>
-            <TabsTrigger value="about">About me</TabsTrigger>
-          </TabsList>
-
-          <div className="w-full min-h-[70vh]">
-            <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{experience.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {experience.description}
-                </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {experience.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="bg-primary-light h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                            {item.position}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            <FaCircle className="w-2 h-2 text-accent" />
-                            <p className="text-white/60">{item.company}</p>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="education" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                <h3 className="text-4xl font-bold">{education.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {education.description}
-                </p>
-                <ScrollArea className="h-[400px]">
-                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
-                    {education.items.map((item, index) => {
-                      return (
-                        <li
-                          key={index}
-                          className="bg-primary-light h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
-                        >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[80px] text-center lg:text-left">
-                            {item.degree}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            <FaCircle className="w-2 h-2 text-accent" />
-                            <p className="text-white/60">{item.school}</p>
-                          </div>
-                        </li>
-                      );
-                    })}
-                  </ul>
-                </ScrollArea>
-              </div>
-            </TabsContent>
-
-            <TabsContent value="skills" className="w-full h-full">
-              <div className="flex flex-col gap-[30px]">
-                <div className="flex flex-col gap-[30px] text-center xl:text-left">
-                  <h3 className="text-4xl font-bold">{skills.title}</h3>
-                  <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                    {skills.description}
-                  </p>
-                  <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
-                    {skills.skillList.map((skill, index) => {
-                      return (
-                        <li key={index}>
-                          <TooltipProvider>
-                            <Tooltip>
-                              <TooltipTrigger className="w-full h-[150px] bg-primary-light rounded-xl flex justify-center items-center group">
-                                <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                                  {skill.icon}
-                                </div>
-                              </TooltipTrigger>
-                              <TooltipContent>
-                                <p className="capitalize">{skill.name}</p>
-                              </TooltipContent>
-                            </Tooltip>
-                          </TooltipProvider>
-                        </li>
-                      );
-                    })}
-                  </ul>
+      <div className="container mx-auto flex flex-col gap-16 xl:gap-20">
+        <h1 className="sr-only">Resume of Nihad Kerić, Software Engineer in Zurich</h1>
+        <section className="flex flex-col gap-[30px] text-center xl:text-left">
+          <h2 className="text-4xl font-bold">{experience.title}</h2>
+          <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+            {experience.description}
+          </p>
+          <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+            {experience.items.map((item, index) => (
+              <li
+                key={index}
+                className="group bg-primary-light min-h-[184px] py-6 px-6 sm:px-10 rounded-xl border border-transparent hover:border-accent transition-all duration-300 flex flex-col justify-center items-center lg:items-start gap-1"
+              >
+                <span className="text-accent">{item.duration}</span>
+                <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
+                  {item.position}
+                </h3>
+                <div className="flex items-center gap-3">
+                  <FaCircle className="w-2 h-2 text-accent" />
+                  <a
+                    href={item.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-white/60 group-hover:text-accent transition-all duration-300"
+                  >
+                    {item.company}
+                  </a>
                 </div>
-              </div>
-            </TabsContent>
+              </li>
+            ))}
+          </ul>
+        </section>
 
-            <TabsContent value="about" className="w-full text-left">
-              <div className="flex flex-col gap-[30px]">
-                <h3 className="text-4xl font-bold">{about.title}</h3>
-                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
-                  {about.description}
-                </p>
-              </div>
-            </TabsContent>
-          </div>
-        </Tabs>
+        <section className="flex flex-col gap-[30px] text-center xl:text-left">
+          <h2 className="text-4xl font-bold">{skills.title}</h2>
+          <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
+          <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:gap-[30px] gap-4">
+            {skills.skillList.map((skill, index) => (
+              <li key={index}>
+                <TooltipProvider>
+                  <Tooltip>
+                    <TooltipTrigger asChild>
+                      <a
+                        href={skill.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`${skill.name} website`}
+                        className="w-full h-[150px] bg-primary-light rounded-xl border border-transparent hover:border-accent transition-all duration-300 flex justify-center items-center group"
+                      >
+                        <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                          {skill.icon}
+                        </div>
+                      </a>
+                    </TooltipTrigger>
+                    <TooltipContent>
+                      <p className="capitalize">{skill.name}</p>
+                    </TooltipContent>
+                  </Tooltip>
+                </TooltipProvider>
+              </li>
+            ))}
+          </ul>
+        </section>
       </div>
     </motion.div>
   );

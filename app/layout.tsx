@@ -21,12 +21,16 @@ export const metadata: Metadata = {
   keywords: [
     'Nihad Kerić',
     'Frontend Engineer Zurich',
-    'Senior Frontend Developer Switzerland',
+    'Software Engineer Switzerland',
     'Angular',
     'NgRx',
     'TypeScript',
     'React',
     'Next.js',
+    'Java',
+    'Spring Boot',
+    'Playwright',
+    'AI-assisted development',
   ],
   alternates: { canonical: '/' },
   openGraph: {
@@ -69,7 +73,7 @@ const jsonLd = {
       url: SITE_URL,
       image: `${SITE_URL}/assets/me.webp`,
       email: 'mailto:nihadkeric@gmail.com',
-      jobTitle: 'Senior Frontend Software Engineer',
+      jobTitle: 'Software Engineer',
       description: SITE_DESCRIPTION,
       nationality: { '@type': 'Country', name: 'Slovenia' },
       homeLocation: {
@@ -89,7 +93,11 @@ const jsonLd = {
         'Next.js',
         'Ionic',
         'NestJS',
-        'Tailwind CSS',
+        'Java',
+        'Spring Boot',
+        'Playwright',
+        'Claude',
+        'AI-assisted development',
         'UI/UX Design',
         'Software Architecture',
       ],
@@ -112,7 +120,9 @@ export default function RootLayout({
         />
         <Header />
         <StairTransition />
-        <PageTransition>{children}</PageTransition>
+        <PageTransition>
+          <main id="main">{children}</main>
+        </PageTransition>
       </body>
     </html>
   );
