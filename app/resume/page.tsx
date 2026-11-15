@@ -51,7 +51,7 @@ const experience = {
   items: [
     {
       company: 'Zurich Insurance',
-      position: 'Senior Frontend Engineer',
+      position: 'Senior Software Engineer',
       duration: '2025 - Present',
     },
     {

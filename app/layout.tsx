@@ -69,7 +69,7 @@ const jsonLd = {
       url: SITE_URL,
       image: `${SITE_URL}/assets/me.webp`,
       email: 'mailto:nihadkeric@gmail.com',
-      jobTitle: 'Senior Frontend Software Engineer',
+      jobTitle: 'Software Engineer',
       description: SITE_DESCRIPTION,
       nationality: { '@type': 'Country', name: 'Slovenia' },
       homeLocation: {

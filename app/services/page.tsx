@@ -16,30 +16,28 @@ const services = [
     number: '01',
     title: 'Web Development',
     description:
-      'I create customized, user-friendly websites that perfectly represent your brand online. From concept to execution – everything is handled from a single source.',
+      'I build fast, maintainable and user-friendly web applications, from the first concept to production. Frontend is my core strength, backed by solid backend knowledge for end-to-end solutions.',
     href: '',
   },
   {
     number: '02',
-    title: 'UI/UX Design',
+    title: 'UI/UX & Product Design',
     description:
-      'I develop intuitive and appealing user interfaces that delight your users. With a strong focus on usability and aesthetics, I ensure that your digital products not only look great but are also easy to use.',
+      'I design intuitive interfaces and user flows with a strong focus on usability and product thinking. The result is a digital product that looks great, is easy to use and meets real user needs.',
     href: '',
   },
-
   {
     number: '03',
-    title: 'Architecture',
+    title: 'Software Architecture & Integrations',
     description:
-      'I design robust and scalable software architectures that form the foundation for sustainable and high-performance applications. Through thoughtful planning and clear structures, I enable you to realize efficient and future-proof software solutions.',
+      'I design scalable, well-structured software architectures and connect them cleanly to APIs, third-party services and existing systems. Clear structures make your solution robust and future-proof.',
     href: '',
   },
-
   {
     number: '04',
-    title: 'Graphic Design',
+    title: 'AI Agents & Automation',
     description:
-      'I create visually compelling designs that make your brand strong and distinctive. Whether logos, marketing materials, or digital media – my designs convey your message clearly and aesthetically.',
+      'I build AI agents and automated workflows that take over repetitive tasks and speed up your processes. I integrate AI in a practical, transparent and controlled way, so you understand what it does and why.',
     href: '',
   },
 ];

@@ -8,22 +8,19 @@ export default function Home() {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">
-              Senior Frontend Software Engineer · Angular, TypeScript, React · Zurich, Switzerland
-            </span>
             <h1 className="h1 mb-6">
               Hello I&#39;m <br /> <span className="text-accent">Nihad Kerić</span>
             </h1>
             <p className="max-w-[500px] mb-3 text-white/80">
-              Nihad Kerić is a Frontend Software Engineer based in Zurich with over 8 years of experience. Passionate about
-              designing intuitive <span className="text-accent font-extrabold">UI&#39;s</span>{' '}
-              and optimizing <span className="text-accent font-extrabold">UX</span>. Quick
-              learner, always up to date with the latest technology.
+              I&#39;m a Software Engineer based in Zurich with over 8 years of experience, specialising in
+              frontend development and with solid backend knowledge. I enjoy designing intuitive{' '}
+              <span className="text-accent font-extrabold">UI&#39;s</span> and optimizing{' '}
+              <span className="text-accent font-extrabold">UX</span>. I am a quick learner and
+              continuously research new technologies to stay up to date.
             </p>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I also conduct research in the{' '}
-              <span className="text-accent font-extrabold">AI</span> field, exploring ways to
-              optimize my work, making processes faster and more efficient.
+              I use <span className="text-accent font-extrabold">AI</span> to develop faster, while
+              making sure I always understand the code and the decisions behind it.
             </p>
             <p className="max-w-[500px] mb-9 text-white/80">
               Let&#39;s connect and exchange knowledge.
