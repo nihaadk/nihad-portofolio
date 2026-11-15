@@ -37,12 +37,15 @@ const Stats = () => {
                 key={index}
                 className="flex-1 flex gap-4 items-center justify-center xl:justify-start"
               >
-                <CountUp
-                  end={stat.number}
-                  duration={5}
-                  delay={2}
-                  className="text-4xl xl:text-6xl font-extrabold"
-                />
+                <span className="sr-only">{stat.number}</span>
+                <span aria-hidden="true">
+                  <CountUp
+                    end={stat.number}
+                    duration={5}
+                    delay={0.5}
+                    className="text-4xl xl:text-6xl font-extrabold"
+                  />
+                </span>
                 <p
                   className={`${
                     stat.text.length < 25 ? 'max-w-[100px]' : 'max-w[150px]'

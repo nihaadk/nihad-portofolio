@@ -120,7 +120,9 @@ export default function RootLayout({
         />
         <Header />
         <StairTransition />
-        <PageTransition>{children}</PageTransition>
+        <PageTransition>
+          <main id="main">{children}</main>
+        </PageTransition>
       </body>
     </html>
   );

@@ -184,7 +184,7 @@ const Resume = () => {
       animate={{
         opacity: 1,
         transition: {
-          delay: 2.4,
+          delay: 0.5,
           duration: 0.4,
           ease: 'easeIn',
         },
@@ -192,6 +192,7 @@ const Resume = () => {
       className="py-12 xl:py-0"
     >
       <div className="container mx-auto flex flex-col gap-16 xl:gap-20">
+        <h1 className="sr-only">Resume of Nihad Kerić, Software Engineer in Zurich</h1>
         <section className="flex flex-col gap-[30px] text-center xl:text-left">
           <h2 className="text-4xl font-bold">{experience.title}</h2>
           <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">

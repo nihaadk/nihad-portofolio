@@ -7,10 +7,10 @@
 - [Resume](https://nihad-portofolio.vercel.app/resume): Experience and skills
 - [Work](https://nihad-portofolio.vercel.app/work): Selected projects
 - [Services](https://nihad-portofolio.vercel.app/services): Web development, UI/UX & product design, software architecture & integrations, AI agents & automation
-- [Contact](https://nihad-portofolio.vercel.app/contact): nihadkeric@gmail.com
+- Email: nihadkeric@gmail.com
 
 ## Experience
-- Senior Frontend Engineer, Zurich Insurance (2025 - present)
+- Senior Software Engineer, Zurich Insurance (2025 - present)
 - Senior Frontend Engineer, Emineo AG (2023 - 2025)
 - Frontend Engineer, Emineo AG (2019 - 2023)
 - Frontend Engineer, Hapa AG - Coesia Group (2017 - 2019)

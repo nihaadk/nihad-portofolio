@@ -14,6 +14,7 @@ import { usePathname } from 'next/navigation';
 import { CiMenuFries } from 'react-icons/ci';
 import { LINKS } from '@/utils/nav.util';
 import Link from 'next/link';
+import { CONTACT_EMAIL } from '@/lib/site';
 
 const MobileNav = (): ReactElement => {
   const pathname = usePathname();
@@ -31,9 +32,9 @@ const MobileNav = (): ReactElement => {
         <div className="mt-32 mb-40 text-center text-2xl">
           <SheetClose asChild>
             <Link href="/" aria-label="Home page">
-              <h1 className="text-4xl font-semibold">
+              <span className="block text-4xl font-semibold">
                 Nihad <span className="text-accent">#</span>
-              </h1>
+              </span>
             </Link>
           </SheetClose>
         </div>
@@ -51,6 +52,12 @@ const MobileNav = (): ReactElement => {
               </Link>
             </SheetClose>
           ))}
+          <a
+            href={`mailto:${CONTACT_EMAIL}`}
+            className="text-xl hover:text-accent transition-all"
+          >
+            Hire me
+          </a>
         </nav>
       </SheetContent>
     </Sheet>

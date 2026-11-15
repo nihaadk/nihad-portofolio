@@ -20,8 +20,4 @@ export const LINKS: NavItem[] = [
     name: 'work',
     path: '/work',
   },
-  {
-    name: 'contact',
-    path: '/contact',
-  },
 ];

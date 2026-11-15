@@ -2,25 +2,24 @@ import Link from 'next/link';
 import { Button } from './ui/button';
 import Nav from './Nav';
 import MobileNav from './MobileNav';
+import { CONTACT_EMAIL } from '@/lib/site';
 
 const Header = () => {
   return (
     <header className="py-8 xl:py-12 test-white ">
       <div className="container max-auto flex justify-between items-center">
         <Link href="/" aria-label="Home page">
-          <h1 className="text-4xl font-semibold">
+          <span className="block text-4xl font-semibold">
             Nihad <span className="text-accent">#</span>
-          </h1>
+          </span>
         </Link>
 
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
 
-          <Link href="/contact">
-            <Button aria-label="This is a button with text Hire me" title="Button Hire me">
-              Hire me
-            </Button>
-          </Link>
+          <Button asChild>
+            <a href={`mailto:${CONTACT_EMAIL}`}>Hire me</a>
+          </Button>
         </div>
 
         <div className="xl:hidden">

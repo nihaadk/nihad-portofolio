@@ -1,4 +1,5 @@
 export const SITE_URL = 'https://nihad-portofolio.vercel.app';
+export const CONTACT_EMAIL = 'nihadkeric@gmail.com';
 export const SITE_NAME = 'Nihad Kerić';
 export const SITE_TITLE = 'Nihad Kerić - Software Engineer in Zurich';
 export const SITE_DESCRIPTION =
