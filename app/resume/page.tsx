@@ -1,35 +1,35 @@
 'use client';
 
 import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs,
-  FaJava,
-  FaGithub,
-} from 'react-icons/fa';
-import {
   Tooltip,
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
-import {
-  SiSpringboot,
-  SiClaude,
-  SiNextdotjs,
-  SiTypescript,
-  SiAngular,
-  SiNgrx,
-  SiNestjs,
-} from 'react-icons/si';
-import { FaCircle, FaMasksTheater } from 'react-icons/fa6';
 import { motion } from 'framer-motion';
+import { cloneElement } from 'react';
+import {
+  FaCss3,
+  FaFigma,
+  FaGithub,
+  FaGitlab,
+  FaHtml5,
+  FaJava,
+  FaJs,
+  FaNodeJs,
+  FaReact,
+} from 'react-icons/fa';
+import { FaCircle, FaMasksTheater } from 'react-icons/fa6';
 import { IoLogoIonic } from 'react-icons/io';
-import { FaGitAlt } from 'react-icons/fa';
-import { FaGitlab } from 'react-icons/fa';
+import {
+  SiAngular,
+  SiClaude,
+  SiNestjs,
+  SiNextdotjs,
+  SiNgrx,
+  SiSpringboot,
+  SiTypescript,
+} from 'react-icons/si';
 
 const experience = {
   icon: '/assets/resume/badge.svg',
@@ -241,7 +241,7 @@ const Resume = () => {
                         className="w-full h-[150px] bg-primary-light rounded-xl border border-transparent hover:border-accent transition-all duration-300 flex justify-center items-center group"
                       >
                         <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                          {skill.icon}
+                          {cloneElement(skill.icon, { 'aria-hidden': true, role: 'presentation' })}
                         </div>
                       </a>
                     </TooltipTrigger>

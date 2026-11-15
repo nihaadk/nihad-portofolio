@@ -20,13 +20,13 @@ const MobileNav = (): ReactElement => {
   const pathname = usePathname();
   return (
     <Sheet>
-      <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent" />
+      <SheetTrigger className="flex justify-center items-center" aria-label="Open menu">
+        <CiMenuFries className="text-[32px] text-accent" aria-hidden="true" />
       </SheetTrigger>
       <SheetContent className="flex flex-col">
         <SheetHeader>
-          <SheetTitle />
-          <SheetDescription />
+          <SheetTitle className="sr-only">Menu</SheetTitle>
+          <SheetDescription className="sr-only">Site navigation</SheetDescription>
         </SheetHeader>
 
         <div className="mt-32 mb-40 text-center text-2xl">

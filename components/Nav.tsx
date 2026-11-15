@@ -1,6 +1,6 @@
 'use client';
 
-import { LINKS, NavItem } from '@/utils/nav.util';
+import { LINKS } from '@/utils/nav.util';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 

@@ -29,7 +29,7 @@ const socialLinks: SocialLink[] = [
     title: 'Github',
   },
   {
-    icon: <SiStackblitz/>,
+    icon: <SiStackblitz aria-hidden="true" role="presentation" />,
     path: 'https://stackblitz.com/@nihaadk',
     title: 'Stackblitz'
   },
@@ -56,7 +56,7 @@ const SocialLinks: React.FC<SocialLinksProps> = ({ containerStyle, iconStyle }) 
       {socialLinks.map((social, index) => (
         <TooltipProvider key={index}>
           <Tooltip>
-            <TooltipTrigger aria-label="Social button" title={social.title}>
+            <TooltipTrigger aria-label={social.title} title={social.title}>
               <Link
                 aria-label={social.title}
                 key={index}
