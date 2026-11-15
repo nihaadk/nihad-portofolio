@@ -4,7 +4,7 @@
 
 ## Pages
 - [Home](https://nihad-portofolio.vercel.app/): Introduction and social profiles
-- [Resume](https://nihad-portofolio.vercel.app/resume): Experience, education, skills
+- [Resume](https://nihad-portofolio.vercel.app/resume): Experience and skills
 - [Work](https://nihad-portofolio.vercel.app/work): Selected projects
 - [Services](https://nihad-portofolio.vercel.app/services): Web development, UI/UX & product design, software architecture & integrations, AI agents & automation
 - [Contact](https://nihad-portofolio.vercel.app/contact): nihadkeric@gmail.com
@@ -22,7 +22,7 @@
 - Courses: Angular, Ionic, React, Next.js, Clean Code, TailwindCSS, Cypress, GitLab CI/CD, Kubernetes
 
 ## Skills
-HTML, CSS, JavaScript, TypeScript, Angular, NgRx, Ionic, React, Next.js, NestJS, Node.js, Tailwind CSS, Bootstrap, Figma, Git, GitLab
+HTML, CSS, JavaScript, TypeScript, Angular, NgRx, Ionic, React, Next.js, NestJS, Node.js, Java, Spring Boot, Playwright, Claude, Figma, Git, GitLab
 
 ## Projects
 - HMI Dashboard (Hapa / Optimate): Angular.JS, WebSocket - https://www.hapa.ch/en/solutions/product/web-40-5d
